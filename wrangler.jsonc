@@ -1,6 +1,18 @@
 {
-  "name": "hooshyar-telegram-bot",
-  "main": "src/index.ts",
-  "compatibility_date": "2026-07-05",
-  "compatibility_flags": ["nodejs_compat"]
+	"name": "hooshyar-telegram-bot",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-07-05",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"kv_namespaces": [
+		{
+			"binding": "BOT_SESSIONS",
+			"id": "50c851f184644fd9815f5b9934034763",
+			"remote": true
+		}
+	],
+  "triggers": {
+    "crons": ["*/15 * * * *"]
+  }
 }
